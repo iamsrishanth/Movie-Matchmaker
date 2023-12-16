@@ -8,9 +8,8 @@
 </head>
 <body>
     <div class="container">
-        <h1>Movie Recommendations</h1>
+        <h1>Movie Recommendations for you :</h1>
         {% for movie, recommendations in recommendations.items() %}
-            <h2>Movies recommended for '{{ movie }}':</h2>
             <ul>
                 {% for recommendation in recommendations %}
                     <li>{{ recommendation }}</li>

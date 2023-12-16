@@ -43,7 +43,7 @@ def recommend_movies(movie_title, cosine_sim=cosine_sim):
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
 
     # Get the top 5 similar movies (excluding the input movie itself)
-    sim_scores = sim_scores[1:6]
+    sim_scores = sim_scores[1:2]
 
     # Get the movie indices
     movie_indices = [score[0] for score in sim_scores]
@@ -65,6 +65,7 @@ def recommendations():
     recommendations_list = {}
     for movie in input_movies:
         recommendations_list[movie] = recommend_movies(movie)
+        
 
     return render_template('recommendations.html', recommendations=recommendations_list)
 
