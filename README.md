@@ -1,5 +1,7 @@
 install requirements\
 pip install -r requirements.txt\
 Run app.py\
+python app.py\
 this application runs on a limited dataset of main_data.csv\
-you won't be able to get desired results while using this
+The program is case sensitive\
+only input the values in lower case
